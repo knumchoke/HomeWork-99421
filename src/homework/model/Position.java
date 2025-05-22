@@ -1,31 +1,31 @@
-package homework;
+package homework.model;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.ArrayList;
 
 /**
  * Represents a job position in the company
  */
 public class Position {
-  private final String code;
-  private final String description;
+  private final String id;
+  private final String name;
 
-  public Position(String code, String description) {
-    this.code = code;
-    this.description = description;
+  public Position(String id, String name) {
+    this.id = id;
+    this.name = name;
   }
 
-  public String getCode() {
-    return code;
+  public String getId() {
+    return id;
   }
 
-  public String getDescription() {
-    return description;
+  public String getName() {
+    return name;
   }
 
   @Override
   public String toString() {
-    return description;
+    return name;
   }
 
   /**

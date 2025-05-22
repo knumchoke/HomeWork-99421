@@ -1,22 +1,22 @@
-package homework;
+package homework.model;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.ArrayList;
 
 /**
  * Represents a qualification or skill that an applicant can have
  */
 public class Qualification {
-  private final String code;
+  private final String id;
   private final String description;
 
-  public Qualification(String code, String description) {
-    this.code = code;
+  public Qualification(String id, String description) {
+    this.id = id;
     this.description = description;
   }
 
-  public String getCode() {
-    return code;
+  public String getId() {
+    return id;
   }
 
   public String getDescription() {

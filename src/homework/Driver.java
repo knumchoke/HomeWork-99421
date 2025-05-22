@@ -1,18 +1,11 @@
 package homework;
 
-import java.awt.*;
-import javax.swing.*;
+import javax.swing.SwingUtilities;
 
 public class Driver {
   public static void main(String[] args) {
     SwingUtilities.invokeLater(() -> {
-      (new View.MainWindow()).setVisible(true);
+      View.createMainWindow().setVisible(true);
     });
-  }
-
-  public static JLabel label(String text, Font f) {
-    JLabel lbl = new JLabel(text, 0);
-    lbl.setFont(f);
-    return lbl;
   }
 }
