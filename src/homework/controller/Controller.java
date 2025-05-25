@@ -1,8 +1,8 @@
 package homework.controller;
 
-import homework.view.ApplicationFormPanel;
-import homework.view.ApplicantDetailPanel;
 import homework.model.Applicant;
+import homework.view.ApplicantDetailPanel;
+import homework.view.ApplicationFormPanel;
 import javax.swing.*;
 
 public class Controller {
@@ -22,7 +22,7 @@ public class Controller {
   }
 
   private void setupEventHandlers() {
-    formPanel.getSubmitButton().addActionListener(e -> handleSubmit());
+    formPanel.getSubmitButton().addActionListener(_ -> handleSubmit());
   }
 
   private void handleSubmit() {

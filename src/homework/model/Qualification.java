@@ -1,7 +1,7 @@
 package homework.model;
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Represents a qualification or skill that an applicant can have
